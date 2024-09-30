@@ -8,6 +8,22 @@ body{
     font-weight: 1000;
     color: #131313;
 }
+
+.text-light-gray{
+    color: #8478a1;
+    font-weight: 700;
+    
+}
+.btn-primary{
+    background-color: deeppink;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+}
+
 .g{
     color: deeppink;
 }
@@ -39,12 +55,274 @@ nav li a{
     text-decoration: none;
     color: #424242;
 }
+/* banner */
+.banner{
+    background-color:#ce44f10a ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+.banner-content{
+    max-width: 800px;
+    
+    
+}
+.banner-title{
+    font-weight:800;
+    font-size: 1.8rem;
+    color: #131313;
+    margin-bottom: 0;
+}
+.text-rgb{
+    font-weight: 1000;
+    font-size: 4rem;
+    color:#d758f1;
+    margin-top:5px ;
+    margin-bottom: 5px;
+    
+
+}
+.btn-secondary{
+    background-color: rgb(20, 181, 255);
+    color: white;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    margin-left: 10px;
+}
+
+.banner .banner-img{
+    width: 700px;
+    height: 650px;
+}
+/* banner2 */
+.banner2{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7bdca5b;
+   
+    padding: 60px 200px 60px 300px;
+    align-items: center;
+}
+.banner2 img{
+    width: 800px;
+    height: auto;
+    
+}
+.banner2-content{
+    max-width: 600px;
+    padding-top: 80px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    text-align: right;
+    
+
+    
+    
+}
+.banner2-description{
+    margin-top: 0px;
+    font-size: 20px;
+    color: #757575;
+    margin: 0px 0px;
+    
+    
+    
+}
+.banner2-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #424242;
+}
+.text-primary-rgb{
+    font-weight: 1000;
+    font-size: 2rem;
+    color:#d758f1;
+    margin-top:5px ;
+    margin-bottom: 5px;
+}
+/* main */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
 /* Responsive */
 @media screen and (max-width:576px){
-    nav{
+    nav {
         flex-direction: column;
     }
+
+    .gamer {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+        gap: 20px; /* Reduce the gap between content and image */
+        padding: 20px;
+    }
+
+    .banner-content {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .text-rgb {
+        font-size: 2.5rem;
+    }
+
+    .text-light-gray {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        /* Buttons take full width on mobile */
+        font-size: 1rem;
+        padding: 12px 0px;
+    }
+
+    .banner .banner-img {
+        width: 100%;
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .social i {
+        font-size: 1.5rem;
+        margin-left: 10px;
+        color: #424242;
+    }
+    .banner2 {
+        flex-direction: column; /* Stack image and content vertically */
+        padding: 20px; /* Adjust padding for smaller devices */
+    }
+
+    .banner2 img {
+        width: 100%; /* Make the image take full width */
+        height: auto; /* Maintain the aspect ratio */
+        margin-bottom: 20px; /* Add some space between the image and content */
+    }
+
+    .banner2-content {
+        padding: 20px; /* Reduce padding on small screens */
+        text-align: center; /* Center the text for smaller screens */
+    }
+
+    .banner2-description {
+        font-size: 16px; /* Decrease font size for readability on small devices */
+    }
+
+    .banner2-title {
+        font-size: 1rem; /* Reduce the title size */
+    }
+
+    .text-primary-rgb {
+        font-size: 1.5rem; /* Reduce the heading size */
+    }
+
+ 
+   
 }
 @media screen and (min-width:576px) and (max-width:992px) {
+    /* Adjust banner content */
+    .banner {
+        flex-direction: column;
+        gap: 20px; /* Reduce the gap between content and image */
+        padding: 20px;
+    }
     
+    .banner-content {
+        max-width: 90%;
+        text-align: center; /* Center text for smaller screens */
+        padding: 20px;
+    }
+
+    .banner .banner-img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    /* Adjust banner2 content */
+    .banner2 {
+        flex-direction: column; /* Stack image and content vertically */
+        padding: 30px; /* Reduce padding */
+        align-items: center; /* Center the content */
+    }
+
+    .banner2 img {
+        width: 100%; /* Image should take full width on medium devices */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .banner2-content {
+        max-width: 90%;
+        padding: 20px;
+        text-align: center; /* Center the text */
+    }
+
+    /* Adjust font sizes */
+    .text-primary-rgb {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner2-title {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust buttons */
+    .btn-primary, .btn-secondary {
+        font-size: 0.9rem;
+        padding: 10px 15px; /* Adjust button padding */
+    }
+    
+    /* Adjust nav */
+    nav {
+        flex-direction: column;
+    }
+
+    .gamer {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px; /* Add spacing between nav items */
+    }
 }
