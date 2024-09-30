@@ -195,6 +195,42 @@ main{
     opacity: 1;
 }
 
+/* features section styles */
+.features{
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+.features .features-content{
+    width: 400px;
+    height: auto;
+    padding-top:200px ;
+    padding-left: 200px;
+}
+
+.features-img img{
+    
+    margin-left: 90px;
+}
+.img-badge{
+    border-radius: 8px;
+   
+    color: #FFF;
+    width: 342px;
+    
+    text-align: center;
+    position:relative;
+    bottom: 300px;
+    right: 100px;
+}
+.img-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.img-badge p{
+    font-size: 1.5rem;
+}
+
 /* Responsive */
 @media screen and (max-width:576px){
     nav {
@@ -309,6 +345,29 @@ main{
         font-size: 1rem;
         padding: 8px 15px;
     }
+    .features{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+
+    }
+    .features-img img{
+        width: 70%;
+       
+    }
+    .features .features-content{
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .img-badge {
+        width: 100%;
+        bottom: 150px;
+        right: 50px;
+        width: 45%;
+        text-align: center;
+    }
     
     
  
@@ -412,5 +471,28 @@ main{
     .play-button{
         font-size: 1rem;
         padding: 8px 15px;
+    }
+    .features{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+
+    }
+    .features-img img{
+        width: 80%;
+       
+    }
+    .features .features-content{
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .img-badge {
+        width: 100%;
+        bottom: 200px;
+        right: 60px;
+        width: 45%;
+        text-align: center;
     }
 }
