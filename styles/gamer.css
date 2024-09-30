@@ -1,0 +1,50 @@
+body{
+    font-family: 'Lato',sans-serif;
+    font-family: 'Open Sans',sans-serif;
+    font-family: 'Work Sans',sans-serif;
+}
+.section-title{
+    font-size: 2rem;
+    font-weight: 1000;
+    color: #131313;
+}
+.g{
+    color: deeppink;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav>ul{
+    display: flex;
+}
+.gamer {
+    display: flex;
+    align-items: center; /* Ensures the image and text are vertically aligned */
+}
+
+.gamer img {
+    margin-right: 10px; /* Adds space between the image and the h3 */
+}
+
+
+nav li{
+    list-style: none;
+    margin-right:30px ;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+/* Responsive */
+@media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+}
