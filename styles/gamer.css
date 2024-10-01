@@ -381,6 +381,24 @@ main{
     font-size: 1rem;
     font-weight: 700;
   }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .social-icons i {
+    color: #333; /* Default dark color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+  }
+  
+  .social-icons i:hover {
+    color: #f8d8e2; /* Highlight color on hover */
+    transform: scale(1.2); /* Slightly increase size on hover */
+  }
+  
+ 
 
 /* Responsive */
 @media screen and (max-width:576px){
@@ -564,7 +582,9 @@ main{
         grid-template-columns: repeat(3,1fr);
     }
 
-    
+    .social-icons{
+        gap: 20px;
+    }
     
  
    
