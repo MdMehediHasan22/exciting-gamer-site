@@ -349,6 +349,38 @@ main{
     color: #FFF;
   }
   
+  .footer-banner{
+    width: 100%;
+    background-color: #131313;
+  }
+  .footer-div{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+    padding-top: 60px;
+  }
+  .footer-title{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .footer-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    
+  }
+  .footer-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+  }
 
 /* Responsive */
 @media screen and (max-width:576px){
@@ -526,6 +558,10 @@ main{
         margin-left: 0;
         margin-right: 300px;
        
+    }
+    .footer-links ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
 
     
